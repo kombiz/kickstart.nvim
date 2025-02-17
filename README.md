@@ -12,26 +12,33 @@ A starting point for Neovim that is:
 
 ## Installation
 
-'''
-Debian:
+This section provides instructions for installing the necessary dependencies and setting up Neovim with Kickstart.
 
+### Debian
+
+```bash
 sudo apt update
 sudo apt install make gcc ripgrep unzip git xclip curl
 
-# Now we install nvim
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-sudo rm -rf /opt/nvim-linux-x86_64
+# Install Neovim
+curl -LO [https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz](https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz)
+sudo rm -rf /opt/nvim-linux-x86_64  # Clean up any previous installations
 sudo mkdir -p /opt/nvim-linux-x86_64
 sudo chmod a+rX /opt/nvim-linux-x86_64
 sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 
-# make it available in /usr/local/bin, distro installs to /usr/bin
+# Create a symbolic link
 sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/
 
-sudo apt remove neovim
+# (Optional) Remove any existing Neovim installation (use with caution!)
+# sudo apt remove neovim  # Uncomment if needed
 
-git clone https://github.com/kombiz/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
-'''
+# Clone Kickstart
+git clone [https://github.com/kombiz/kickstart.nvim.git](https://github.com/kombiz/kickstart.nvim.git) "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
+
+
 
 
 ### Install Neovim
