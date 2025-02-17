@@ -18,6 +18,9 @@ This section provides instructions for installing the necessary dependencies and
 
 ```bash
 sudo apt update
+# (Optional) Remove any existing Neovim installation (use with caution!)
+# sudo apt remove neovim  # Uncomment if needed
+
 sudo apt install make gcc ripgrep unzip git xclip curl
 
 # Install Neovim
@@ -29,12 +32,12 @@ sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 
 # Create a symbolic link
 sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/
+```
 
-# (Optional) Remove any existing Neovim installation (use with caution!)
-# sudo apt remove neovim  # Uncomment if needed
-
+```bash
 # Clone Kickstart
-git clone [https://github.com/kombiz/kickstart.nvim.git](https://github.com/kombiz/kickstart.nvim.git) "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/kombiz/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+
 ```
 
 
