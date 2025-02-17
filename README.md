@@ -11,6 +11,8 @@ A starting point for Neovim that is:
 **NOT** a Neovim distribution, but instead a starting point for your configuration.
 
 ## Installation
+
+'''
 Debian:
 
 sudo apt update
@@ -29,7 +31,7 @@ sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/
 sudo apt remove neovim
 
 git clone https://github.com/kombiz/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
-
+'''
 
 
 ### Install Neovim
